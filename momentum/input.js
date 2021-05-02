@@ -1,10 +1,11 @@
 const form = document.querySelector('.js-form'),
-    input = form.querySelector('input');
+      input = form.querySelector('input'),
+	  text = document.querySelector('.js-text');
 
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = input.value;
-    alert(currentValue);
+    localStorage.setItem('userName',currentValue);
 }
 
 function askForName() {
@@ -17,6 +18,9 @@ function loadName() {
     if (currentUser === null) {
         askForName();
     } else {
+		input.classList.remove('showing');
+		text.innerText = `Hello ${currentUser}`;
+		text.classList.add('showing');
     }
 }
 
