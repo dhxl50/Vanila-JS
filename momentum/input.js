@@ -2,10 +2,18 @@ const form = document.querySelector('.js-form'),
       input = form.querySelector('input'),
 	  text = document.querySelector('.js-text');
 
+function paintGreeting(name){
+		form.classList.remove('showing');
+		text.innerText = `Hello ${name}`;
+		text.classList.add('showing');
+}
+
 function handleSubmit(event) {
     event.preventDefault();
     const currentValue = input.value;
     localStorage.setItem('userName',currentValue);
+	
+	paintGreeting(currentValue);
 }
 
 function askForName() {
@@ -18,9 +26,7 @@ function loadName() {
     if (currentUser === null) {
         askForName();
     } else {
-		input.classList.remove('showing');
-		text.innerText = `Hello ${currentUser}`;
-		text.classList.add('showing');
+		paintGreeting(currentUser);
     }
 }
 
