@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const html = document.querySelector("html");
 
 const IMG_NUMBER = 3;
 
@@ -9,7 +9,7 @@ function handleImgLoad(){
 function paintImage(imgNumber){
 	const img = new Image();
 	img.src = `./images/landscape${imgNumber}.jpg`; 
-	body.appendChild(img);
+	html.appendChild(img);
 	img.classList.add('bgImage');
 	
 	

@@ -1,42 +1,57 @@
-body {
-    background-color: #95afc0;
-}
-.main-body {
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 70%;
-    max-width: 500px;
-    height: 30rem;
-    top: 80%;
-    margin: auto auto;
-	padding-top: 2rem;
-    border-radius: 20px 20px 20px 20px;
+*{
+	margin:0px;
+	box-sizing: border-box;
+	/*border: 1px solid red;*/
+	text-shadow: 2px 2px 2px gray;
 }
 
-.js-title {
-    color: white;
-	font-size: 45px;
-    text-align: center;
+body {
+    background-color: gray;
+	position: absolute;
+	width:50%; height:50%;
+	margin-left:25%;
+	margin-top:15rem;
 	
 }
 
-.js-form{
-    display: none;
+.js-clockTitle {
+    color: white;
+	font-size: 4rem;
+    text-align: center;
+	margin:1rem;
+	
 }
 
-.js-toDoForm, .js-toDoList{
-	color:white;
+.js-form, .js-text{
+    display: none;
 	text-align:center;
+	margin:1rem;
+}
+.js-text {
+	color: white;
+	font-size:1.5rem;
+	text-align: center;
+}
+
+.js-toDoForm {
+	margin:1rem;
+	text-align:center;
+}
+
+.js-toDoList{
+	margin:1rem;
+	color:white;
+	text-align:justify;
 	list-style-type:none;
 }
 
-.js-text {
-    display: none;
+.js-toDoList>li {
+	margin-left:30%
 }
+
 
 .showing {
     display: block;
-    color: white;
-    text-align: center;
 }
 @keyframes fadeIn {
     from {
