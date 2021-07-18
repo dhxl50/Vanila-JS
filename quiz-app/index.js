@@ -14,7 +14,7 @@ const quizData = [
         c: 'Guido van Rossum',
         d: 'Steve Jobs',
         correct: 'b',
-    },
+    }
 ];
 let questionNumber = 0;
 let count = 0;
