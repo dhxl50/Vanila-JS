@@ -16,10 +16,6 @@ function countdown(){
 	timerText[3].innerText = seconds;
 }
 
-function paintTimer(){
-	
-}
-
 function init(){
 	countdown();
 	setInterval(countdown, 1000);
