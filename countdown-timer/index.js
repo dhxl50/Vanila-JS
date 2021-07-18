@@ -2,7 +2,7 @@ const discharge = `2022-07-17`;
 const timerText = document.querySelectorAll('.big-text');
 
 function countdown(){
-	const dischargeDate = new Date(discharge);
+	const dischargeDate = new Date(discharge);	//
 	const currentDate = new Date();
 	const countdownSecond = dischargeDate-currentDate;
 	
